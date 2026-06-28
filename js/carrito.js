@@ -36,7 +36,7 @@ function renderCarrito() {
                 <button class="btn btn-sm btn-outline-secondary" data-id="${item.id_producto}" data-talle="${item.talle}" data-accion="restar">−</button>
                 <span class="text-muted">x${item.cantidad}</span>
                 <button class="btn btn-sm btn-outline-secondary" data-id="${item.id_producto}" data-talle="${item.talle}" data-accion="sumar">+</button>
-             </div>
+            </div>
             <span class="fw-semibold">$${(item.precio * item.cantidad).toLocaleString('es-AR')}</span>
             <button class="btn btn-sm btn-outline-danger" data-id="${item.id_producto}" data-talle="${item.talle}"data-accion="eliminar">
                 <i class="bi bi-trash"></i>
