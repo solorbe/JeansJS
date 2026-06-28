@@ -30,7 +30,7 @@ let arrayAllJeans = [];
 
 async function listaProductos() {
     try {
-        const res = await fetch('/productos.json');
+        const res = await fetch('./productos.json');
         const data = await res.json();
         arrayAllJeans = data;
         console.log(arrayAllJeans);
