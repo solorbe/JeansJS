@@ -1,13 +1,13 @@
 const totalconfirmarcompra = document.getElementById('totalconfirmarcompra');
 totalconfirmarcompra.innerHTML = `
-      <div class="d-flex gap-2">
+    <div class="d-flex gap-2">
         <button id="btn-eliminar-todo" class="btn swal2-confirm" disabled>Eliminar todo</button>
         <button id="btn-comprar" class="btn swal2-confirm" disabled>Comprar</button>
-      </div>
-      <div class="d-flex align-items-center gap-3">
+    </div>
+    <div class="d-flex align-items-center gap-3">
         <span class="fs-5 fw-bold">Total:</span>
         <span class="fs-5 fw-bold" id="carrito-total">$0</span>
-      </div>
+    </div>
     `;
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
